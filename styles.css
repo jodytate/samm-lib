@@ -1,0 +1,53 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto Mono', sans-serif;
+  color: #555555;
+  background: #FFFFFF;
+  -webkit-animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  -ms-animation: fadein 1s;
+  animation: fadein 1s;
+  font-size: 1.5em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#coderdojo-img {
+  display: block;
+  margin: 4em auto;
+}
+
+#coderdojo-text {
+  width: 70%;
+  font-size: 2em;
+  text-align: center;
+  margin: 2em auto;
+}
+
+
+/* Make it a marquee */
+.marquee {
+    width: 800px;
+    font-size: 3em;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: marquee 25s linear infinite;
+}
+
+/* Make it move */
+@keyframes marquee {
+    0%   { text-indent: 27.5em }
+    100% { text-indent: -105em }
+}
